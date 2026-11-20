@@ -39,3 +39,17 @@ test('kasutaja saab ülesande kustutada', async ({ page }) => {
 
   await expect(page.getByText('Kustutatav ülesanne')).toHaveCount(0);
 });
+
+test('kasutaja saab lisada kaks ülesannet', async ({ page }) => {
+  await page.goto(TODO_URL);
+
+  const input = page.getByPlaceholder('What needs to be done?');
+
+  await input.fill('Esimene ülesanne');
+  await input.press('Enter');
+
+  await input.fill('Teine ülesanne');
+  await input.press('Enter');
+
+  await expect(page.getByRole('listitem')).toHaveCount(2);
+});
