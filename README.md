@@ -420,6 +420,10 @@ Kui kolm põh testi on valmis, vali vähemalt üks lisategevus:
 
 ---
 
+### 12. ülesande täiendav test
+
+Valisin esimese lisategevuse: kahe ülesande lisamine ja kontrollimine, et nimekirjas on täpselt kaks ülesannet. Test asub failis `tests/todo.spec.js` ning selle nimi on `kasutaja saab lisada kaks ülesannet`.
+
 ## 13. Töö esitamine
 
 Esita õpetajale oma GitHubi repositooriumi link.
