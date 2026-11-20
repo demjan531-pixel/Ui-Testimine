@@ -431,13 +431,22 @@ Enne esitamist kontrolli:
 - [ ] Kõik testid on käivitatud.
 - [ ] README lõpus on vastused küsimustele.
 
-### Vasta README lõpus järgmistele küsimustele
+### Vastused küsimustele
 
-1. Mis vahe on manuaalsel ja automaatsel UI-testimisel?
-2. Mida kontrollib sinu esimene test?
-3. Miks kasutatakse Playwrighti testides `expect()`?
-4. Mida tähendab `passed` ja mida tähendab `failed`?
-5. Kas ebaõnnestunud test tähendab alati, et veebirakenduses on viga? Selgita.
+1. **Mis vahe on manuaalsel ja automaatsel UI-testimisel?**  
+   Manuaalse UI-testimise korral kontrollib inimene rakendust ise, tehes hiire ja klaviatuuriga erinevaid tegevusi. Automaatse UI-testimise korral teeb need tegevused testikood ning kontrollib tulemusi automaatselt. Automaatseid teste saab kiiresti ja korduvalt käivitada.
+
+2. **Mida kontrollib sinu esimene test?**  
+   Esimene test avab TodoMVC rakenduse, sisestab ülesande „Õpi UI testimist”, vajutab Enter-klahvi ja kontrollib, et ülesanne ilmub nimekirja ning on nähtav.
+
+3. **Miks kasutatakse Playwrighti testides expect()?**  
+   expect() abil kontrollitakse, kas rakenduse tegelik tulemus vastab oodatud tulemusele. Näiteks saab kontrollida, kas element on nähtav või märkeruut on märgitud. Kui kontroll ebaõnnestub, märgitakse test ebaõnnestunuks.
+
+4. **Mida tähendab passed ja mida tähendab failed?**  
+   passed tähendab, et test läbis kõik kontrollid edukalt. failed tähendab, et vähemalt üks testis tehtud kontroll või tegevus ebaõnnestus.
+
+5. **Kas ebaõnnestunud test tähendab alati, et veebirakenduses on viga? Selgita.**  
+   Ei tähenda. Viga võib olla veebirakenduses, kuid probleem võib olla ka testikoodis, vales lokaatoris, vales oodatud tulemuses või testkeskkonnas. Seetõttu tuleb enne järelduste tegemist veateade ja testi sammud üle kontrollida.
 
 ### Esitamise tulemus
 
